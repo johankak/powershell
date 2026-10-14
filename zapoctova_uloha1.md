@@ -29,7 +29,10 @@ $token
 <img width="940" height="193" alt="image" src="https://github.com/user-attachments/assets/8c3f2a43-e38c-44ca-a472-733cb2467e99" />
 
 8. Vytvoření a uplatnění falešného kupónu 50% na říjen 2026:
-pEw8phz3^u je kód, který vznikl zakódováním textu OCT26-50 (říjen 2026, 50% sleva) algoritmem Z85 – stejným, jaký Juice Shop interně používá ke generování kupónů. Protože jde jen o zakódování (ne šifrování), kód lze takhle dopředu „vyrobit” i bez znalosti skutečného aktuálního kupónu.
+pEw8phz3^u je kód, který vznikl zakódováním textu OCT26-50 (říjen 2026, 50% sleva) algoritmem Z85 – stejným, jaký Juice Shop interně používá ke generování kupónů a který jsme zjistili v úkolu Forge a coupon code (získat slevu alespoň 80 %). Protože jde jen o zakódování (ne šifrování), kód lze takhle dopředu „vyrobit” i bez znalosti skutečného aktuálního kupónu. Já využila CyberChef.
+
+<img width="1912" height="942" alt="image" src="https://github.com/user-attachments/assets/7c60102a-dae6-484f-99fa-254f1e372ab7" />
+
  
 <img width="859" height="171" alt="image" src="https://github.com/user-attachments/assets/55ebde02-d052-4269-b03e-f49cc3e352f0" />
 
