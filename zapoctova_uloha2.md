@@ -2,26 +2,16 @@
 Vytvořte skript, který vykreslí paletu 16 odstínů barev přednastavených v terminálu (viz obrázek)
 
 AI Claude mi pomohl vytvořit skript, ve kterém:
-[System.ConsoleColor].GetEnumNames() načte seznam 16 názvů barev
 
-foreach projde barvy jednu po druhé
+[System.Enum]::GetNames([System.ConsoleColor]) vrátí všech 16 názvů barev ve stejném pořadí, jaké je na obrázku (Black, DarkBlue, DarkGreen, ... White).
 
-.PadRight(12) doplní mezery, aby sloupce byly zarovnané
+-NoNewline drží všechny tři sloupce na jednom řádku. Až poslední Write-Host řádek ukončí.
 
-Write-Host je cmdlet, který vypisuje text do konzole
+PadRight(22) zarovná sloupce do stejné šířky, takže jsou pod sebou.
 
--NoNewline aby se tři sloupce vypsaly na jeden řádek
-
--ForegroundColor je pro barvu písma a -BackgroundColor pro barvu pozadí
-
-Podmínka if ve skriptu řeší, že pokud je aktuální barva černá, pak se vytvoří řetězec 12 mezer a ten se předá do 2. sloupce
-
-<img width="696" height="463" alt="image" src="https://github.com/user-attachments/assets/6d8f81d8-07d3-4c3c-87fc-76d3249fd1e1" />
- 
+<img width="1090" height="462" alt="image" src="https://github.com/user-attachments/assets/1b1c03a3-b5a7-480b-b5dc-1817fae58090" />
 
 
 Skript jsem si uložila jako paleta.ps1 na plochu a spustila v PS
  
-<img width="903" height="594" alt="image" src="https://github.com/user-attachments/assets/b8a563b9-7938-4915-94f9-8b29d90e88f9" />
-
-
+<img width="962" height="553" alt="image" src="https://github.com/user-attachments/assets/a7949c7a-7144-4730-a19c-0ce637484656" />
